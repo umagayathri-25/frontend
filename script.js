@@ -70,3 +70,17 @@ var swiper = new Swiper(".product-slider", {
   });
 
         
+// Extract image name from the URL query parameter
+const urlParams = new URLSearchParams(window.location.search);
+const imageName = urlParams.get('image');
+
+// Use the imageName to determine which image to display
+if (imageName === 'flower.jpg') {
+    // Display image 1
+} else if (imageName === 'image2.jpg') {
+    // Display image 2
+} else if (imageName === 'image3.jpg') {
+    // Display image 3
+} else {
+    // Handle the case when the image name is not recognized
+}
