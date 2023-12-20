@@ -396,12 +396,23 @@
     <script src="js/script.js"></script>
     
 
-    <script>
-        function redirectToWebXRPage() {
-            // Redirect to your WebXR page on GitHub
-            window.location.href = 'https://umagayathri-25.github.io/web-xr';
-        }
-    </script>
+    <!-- ... (previous HTML code) -->
+
+<!-- Add a button to navigate to the WebXR page with a specific image name -->
+<button onclick="redirectToWebXRPage('flower1.jpg')" class="btn">Explore Image 1 in AR</button>
+<button onclick="redirectToWebXRPage('flower2.jpg')" class="btn">Explore Image 2 in AR</button>
+<button onclick="redirectToWebXRPage('image3.jpg')" class="btn">Explore Image 3 in AR</button>
+
+<script>
+    function redirectToWebXRPage(imageName) {
+        // Redirect to your WebXR page with the specified image name as a query parameter
+        window.location.href = 'https://umagayathri-25.github.io/web-xr//?image=' + encodeURIComponent(imageName);
+    }
+</script>
+
+<!-- ... (remaining HTML code) -->
+
+
 
 
     
