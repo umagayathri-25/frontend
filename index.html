@@ -569,5 +569,15 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/script.js"></script>
+    <button onclick="redirectToWebXRPage('headset.jpg')" class="btn">Explore Image 1 in AR</button>
+<button onclick="redirectToWebXRPage('sponza.jpg')" class="btn">Explore Image 2 in AR</button>
+<button onclick="redirectToWebXRPage('space.jpg')" class="btn">Explore Image 3 in AR</button>
+
+<script>
+    function redirectToWebXRPage(imageName) {
+        // Redirect to your WebXR page with the specified image name as a query parameter
+        window.location.href = 'https://umagayathri-25.github.io/web-xr/?image=' + encodeURIComponent(imageName);
+    }
+</script>
 </body>
 </html>
